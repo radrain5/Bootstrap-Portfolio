@@ -1,52 +1,86 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-us">
 
 <head>
+
   <meta charset="UTF-8">
-  <title>About | Rob Adrain</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Bootstrap Basic Portfolio</title>
+
+  <!-- Boostrap Stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  <!-- Our own CSS stylesheet -->
+  <link rel="stylesheet" href="assets/css/styles.css" media="screen">
+
 </head>
 
 <body>
-         
-  <header id="masthead">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-      <a href="index.html" id="logo">Rob Adrain</a>
-      <nav>
-            <ul class="nav nav-tabs">
-                    <li role="presentation" class="active"><a href="#">About</a></li>
-                    <li role="presentation"><a href="portfolio.html">Portfolio</a></li>
-                    <li role="presentation"><a href="contact.html">Contact</a></li>
-                  </ul>  
-        <!-- <a href="index.html">About</a> -->
-        <!-- <a href="portfolio.html">Portfolio</a> -->
-        <!-- <a href="contact.html">Contact</a> -->
-      </nav>
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <a class="navbar-brand" href="index.html" id="logo">Rob Adrain</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
     </div>
-  </header>
+    <!-- /.container -->
+  </nav>
+  <!-- End of navbar -->
 
-  <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>About Me</h1>
+  <!-- Start of container -->
+  <main class="container">
+    <section class="row">
+      <div class="col-md-12">
+        <article class="block">
+          <h1 class="block-header">About Me</h1>
+          <hr />
+          <img src="https://media.licdn.com/dms/image/C4E03AQEwJJNQjlfwdQ/profile-displayphoto-shrink_200_200/0?e=1567036800&v=beta&t=Q0n8cXimJjeSQdQTMRGmp4qBWeC31WQ5g95Y6TceCvk" class="auth-image" alt="Your Name">
+          <p>I grew up in the Kansas City area and moved to San Diego over 10 years ago.  I've worked in several different fields in my career.</p>
 
-      <img src="https://media.licdn.com/dms/image/C4E03AQEwJJNQjlfwdQ/profile-displayphoto-shrink_200_200/0?e=1567036800&v=beta&t=Q0n8cXimJjeSQdQTMRGmp4qBWeC31WQ5g95Y6TceCvk" class="auth-image" alt="Your Name">
+          <p>I was in the mortgage industry as a Loan Officer for a total of 16 years, including the last six years in San Diego with Movement Mortgage where I was a Branch Manager/Sr. Loan Officer.</p>
 
-      <p>Not sure what to put in here.  I grew up in the Kansas City area and moved to San Diego over 10 years ago.  I've worked in several different fields in my career,</p>
-
-      <p>including the last six years in San Diego with Movement Mortgage where I was a Branch Manager/Sr. Loan Officer.  I'm currently employed with Brassington Caseworks,</p>
-
-      <p>where I am involved in all aspects of building and finshing custom cabinetry.</p>
-
+          <p>When I first moved to San Diego in October of 2008, I worked with Brassington Caseworks for four years, where I was involved in all aspects of building and finshing custom cabinetry.  I'm currently focusing on obtaining my Certification in Full Stack Web Development through UCSD's Coding Bootcamp.</p>
+          </p>
+        </article>
+      </div>
     </section>
+  </main>
+  <!-- End of container -->
 
-  </div>
-
-  <footer>
-    <div class="container">
-      Copyright &copy; 
-    </div>
+  <!-- Start of footer -->
+  <footer class="footer">
+    <div class="two-toned-footer-color"></div>
+    <p class="text-muted text-muted-footer text-center">
+      &copy; Copyright
+    </p>
   </footer>
+  <!-- End of footer -->
+
+  <!-- jQuery CDN -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Bootstrap CDN -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
